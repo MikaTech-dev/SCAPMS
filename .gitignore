@@ -42,27 +42,43 @@
 build/
 Build/
 build-*/
+bin/
 
-# CMake generated files
+# CMake generated files & artifacts
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 install_manifest.txt
 compile_commands.json
+CMakeUserPresets.json
+.ninja_*
 
-# Temporary files
+# Qt artifacts
+moc_*.cpp
+mocs_compilation.cpp
+ui_*.h
+qrc_*.cpp
+*.qmlc
+*.jsc
+
+# Temporary & Editor files
 *.tmp
 *.log
 *.bak
 *.swp
+*~
+.DS_Store
+.vscode/
+.idea/
 
-# vcpkg
+# vcpkg & debug info
 vcpkg_installed/
-
-# debug information files
 *.dwo
 
 # test output & cache
 Testing/
 .cache/
+
+# Data runtime output
+data/runtime_*.json
